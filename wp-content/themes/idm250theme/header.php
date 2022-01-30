@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+
+        wp_head();
+
+    ?>
+    <title><?php wp_title(); ?></title>
+</head>
+
+<body>
+
+<div class="menu_hold">
+<?php
+  // Registered this menu in functions.php
+  wp_nav_menu(['theme_location' => 'primary_menu']);
+  ?>
+</div>
+
+<h1>Izzy Heal</h1>
+  

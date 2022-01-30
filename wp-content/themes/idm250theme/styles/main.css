@@ -1,0 +1,43 @@
+* {
+    background-color: black;
+    color: white;
+}
+h1, h2, h3{
+    font-family: 'Barrio', cursive;
+}
+p, li, h4 {
+    font-family: 'Days One', sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    text-decoration: overline;
+    padding-inline-start: 0px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    padding: 1rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 2.5rem;            
+  }
+.cent{
+    text-align: center;
+    padding-bottom: 1rem;
+}
