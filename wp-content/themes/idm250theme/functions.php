@@ -24,8 +24,8 @@ function include_styles()
 // When WP performs this action, call our function
 add_action('wp_enqueue_scripts', 'include_styles');
 
-function include_js_files()
-{
+//function include_js_files()
+/*{
   wp_enqueue_script(
      'idm250-js',
      get_template_directory_uri() . '/scripts/main.js',
@@ -33,9 +33,9 @@ function include_js_files()
        false,
       true
     );
-}
+}*/
 // When WP performs this action, call our function
-add_action('wp_enqueue_scripts', 'include_js_files');
+//add_action('wp_enqueue_scripts', 'include_js_files');
 
 function register_theme_navigation()
 {
