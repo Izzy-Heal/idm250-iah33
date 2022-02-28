@@ -10,6 +10,26 @@ if (version_compare($GLOBALS['wp_version'], '5.4.2', '<')) {
     die('WP theme only works in Wordpress 5.4.2 or later. Please upgrade your WP site');
 }
 
+function create_posttype() {
+ 
+    register_post_type( 'inks',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Digital Inks' ),
+                'singular_name' => __( 'Digital Ink' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'inks'),
+            'show_in_rest' => true,
+ 
+        )
+    );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+
 function include_styles()
 {
     // Example of including an external link
