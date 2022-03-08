@@ -64,11 +64,9 @@ font-size: 3rem;
 .bod{
     padding-left: 27%;
     margin: auto;}
-
 a{
-    text-decoration: none;
+    text-decoration: underline;
 }
-
 li{
     padding: .5rem;
 
