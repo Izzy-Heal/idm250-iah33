@@ -5,10 +5,10 @@
 h1, h2, h3{
     font-family: 'Barrio', cursive;
 }
-p, li, h4, a{
+p, li, h4, a, h5, h6{
     font-family: 'Days One', sans-serif;
 }
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 h2{
@@ -109,6 +109,7 @@ p{
     margin: auto;
     max-width: 50%;
     height:auto;
+    padding-bottom: 5rem;
 }
 .mov{
     display: block;
