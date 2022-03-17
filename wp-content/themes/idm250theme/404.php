@@ -12,5 +12,5 @@ wp_head();
 <h1 class="error">404</h1>
 <h2 class="elow">Page Not Found</h2>
 <div class="bb">
-<button class="ebutton">return to home</button>
+<a href="https://izzyheal.com/IDM250/">return to home</a>
 </div>

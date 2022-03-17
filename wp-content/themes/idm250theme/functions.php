@@ -73,3 +73,13 @@ function add_post_thumbnails_support() {
 }
 
 add_action('after_setup_theme', 'add_post_thumbnails_support');
+
+
+function SearchFilter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+//add_filter('pre_get_posts','SearchFilter');
+?>

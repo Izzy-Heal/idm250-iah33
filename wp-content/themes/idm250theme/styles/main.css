@@ -12,10 +12,22 @@ h1, h2 {
     text-align: center;
 }
 h2{
-    padding-bottom: 4rem;
+    padding-top: 1rem;
 }
 img{
     height: auto;
+}
+.par{
+    padding-top:2rem ;
+    padding-bottom: 2rem;
+}
+.lip{
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    padding: 0;
+    padding-bottom: 2rem;
+    list-style-type:square;
 }
 .hm{
     text-decoration: underline;
@@ -28,7 +40,7 @@ img{
 font-size: 4rem;
 }
 .footer{
-    position: fixed;
+position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -40,6 +52,7 @@ font-size: 4rem;
     padding: 1rem;
     border: none;
 }
+
 .bb{
     text-align: center;
 }
@@ -50,26 +63,40 @@ font-size: 3rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
     list-style-type: none;
-    text-decoration: overline;
     padding-left: 0;
+    position:fixed;
+    padding-left: 1.5rem;
 }
-
+.menu_hold{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    padding-top: 1rem;
+    margin: 1.5rem;
+}
 .menu-items {
     list-style-type: none;
+    text-decoration: none;
     text-decoration: overline;
     padding-inline-start: 0px;
     margin: auto;
+    padding-bottom: 2rem;
 }
 .bod{
     padding-left: 27%;
     margin: auto;}
 a{
     text-decoration: underline;
+    padding-bottom: 4rem;
 }
 li{
     padding: .5rem;
 
+}
+article{
+   width: 100%;
 }
 p{
     display: block;
@@ -93,27 +120,73 @@ p{
     text-align: center;
     padding-bottom: 1rem;
 }
-.list-img{
+.archive-image {
     display: block;
-    width: 40%;
     margin: auto;
+    padding-top: 2rem;
+}
+.wp-post-image{
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
 }
 .sch-r{
     padding-left: 25%;
+}
+input{
+    margin: auto;
+}
+#searchsubmit{
+    background-color: #CA95EA;
+    color: black;
+    font-family: 'Days One', sans-serif;
+    padding: 1.1rem;
+    border: none;
 }
 button{
     background-color: #CA95EA;
     color: black;
     font-family: 'Days One', sans-serif;
-    padding: 1rem;
+    padding: 1.1rem;
     border: none;
 }
+form{
+    display: block;
+    margin: auto;
+}
+.srch{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+input[type=text] {
+    padding: 1rem;
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Days One', sans-serif;
+  }
+  input[type=submit] {
+    background-color: #CA95EA;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Days One', sans-serif;
+  }
 @media screen and (max-width: 600px) {
     p{
         display: block;
         margin: auto;
         max-width: 70%;
         padding-bottom: 2rem;
+    }
+    .lip{
+        display: block;
+        margin: auto;
+        max-width: 70%;
+        padding-bottom: 2rem;
+        list-style-type: none;
     }
     .big_img{
         display: block;
@@ -133,4 +206,37 @@ button{
     .elow{
         font-size: 2rem;
         }
+}
+h1.archive-title{
+    padding-top: 2rem;
+}
+@media screen and (max-width: 700px) {
+    *{
+        margin: 0;
+    }
+.menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 0;
+    position: static;
+    
+}
+.menu_hold{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    padding-top: 0rem;
+
+}
+.menu-items {
+    list-style-type: none;
+    text-decoration: none;
+    text-decoration: overline;
+    padding-inline-start: 0px;
+    margin: auto;
+    padding-bottom: .5rem;
+}
 }

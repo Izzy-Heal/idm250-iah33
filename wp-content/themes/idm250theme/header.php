@@ -12,13 +12,14 @@
 </head>
 
 <body>
-
-<div class="menu_hold">
+  <div class="menu_hold">
+  <h1>Izzy Heal</h1>
+  </div>
 <?php
-  // Registered this menu in functions.php
-  wp_nav_menu(['theme_location' => 'primary_menu']);
-  ?>
-</div>
+  wp_nav_menu(['theme_location' => 'primary_menu']); ?>
 
-<h1>Izzy Heal</h1>
+
+
+
+
   
